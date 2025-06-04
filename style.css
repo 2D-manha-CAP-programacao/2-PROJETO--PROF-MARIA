@@ -1,8 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
 body{
     background-color: rgb(109, 59, 156);
+     font-family: "Edu QLD Hand", cursive;
 }
 
 footer{
     background-color: black;
     color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+}
+
+footer p{
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
 }
