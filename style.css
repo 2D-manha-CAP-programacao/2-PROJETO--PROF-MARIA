@@ -1,7 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+:root{
+    --texto-color:#DBE4EF;
+    --card-front-color:#144480;
+    --card-back-color:#00F4BF;
+}
 body{
-    background-color: rgb(109, 59, 156);
+    background:url(./img/bg-desktop.jpg);
      font-family: "Edu QLD Hand", cursive;
 }
 
@@ -34,17 +39,33 @@ footer p{
 }
 
 .cartao_conteudo{
+    
     text-align: center;
-    background-color: rgb(67, 67, 67);
+    background-color: rgb(35, 28, 28);
     height: 100%;
 }
 
 .cartao_conteudo h3{
     background-color: rgb(189, 130, 237);
+    color:var(--texto-color);
+    border:1px solid var(--texto-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+}
+
+.cartao_conteudo_pergunta p{
+    color: var(--texto-color);
+    font-weight: 500;
+}
+.cartao_conteudo_resposta p{
+    color: var(--texto-color);
+    font-weight: 700;
+}
+
+.cartao:hover .cartao_conteudo{
+    transform: rotateY('180deg');
 }
